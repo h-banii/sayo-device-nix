@@ -1,7 +1,7 @@
 { stdenv }:
 
 stdenv.mkDerivation {
-  pname = "sayo-device-udev-rules";
+  pname = "sayo-udev-rules";
   version = "unstable-2025-04-27";
 
   src = [ ./sayo.rules ];

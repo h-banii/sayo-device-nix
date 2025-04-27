@@ -10,7 +10,7 @@
         default = sayo-cli-v2;
         sayo-cli-v1 = pkgs.callPackage ./package/sayo-cli/v1 { };
         sayo-cli-v2 = pkgs.callPackage ./package/sayo-cli/v2 { };
-        sayo-device-udev-rules = pkgs.callPackage ./package/sayo-device-udev-rules { };
+        sayo-udev-rules = pkgs.callPackage ./package/sayo-udev-rules { };
       };
     };
 }

@@ -38,6 +38,6 @@ inputs.sayo-device.url = "github:h-banii/sayo-device-nix.git";
 ...
 
 services.udev.packages = [
-    inputs.sayo-device.packages.sayo-device-udev-rules
+    inputs.sayo-device.packages.sayo-udev-rules
 ];
 ```
