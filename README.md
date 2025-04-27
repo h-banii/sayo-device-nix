@@ -43,6 +43,8 @@ inputs.sayo-device.url = "github:h-banii/sayo-device-nix.git";
 services.udev.packages = [
     inputs.sayo-device.packages.sayo-udev-rules
 ];
+
+users.users.${your-username}.extraGroups = [ "input" ];
 ```
 
 ## Sayo CLI
