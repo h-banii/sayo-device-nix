@@ -1,0 +1,4 @@
+SUBSYSTEM=="hidraw" \
+, ATTRS{idVendor}=="8089" \
+, GROUP="input" \
+, MODE="0660"

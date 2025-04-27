@@ -10,6 +10,7 @@
         default = v2-binary;
         sayo = pkgs.callPackage ./package { };
         v2-binary = pkgs.callPackage ./package/v2-binary.nix { };
+        sayo-device-udev-rules = pkgs.callPackage ./package/sayo-device-udev-rules { };
       };
     };
 }
