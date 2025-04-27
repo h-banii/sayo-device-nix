@@ -7,9 +7,9 @@
     in
     {
       packages.${system} = rec {
-        default = v2-binary;
-        sayo = pkgs.callPackage ./package { };
-        v2-binary = pkgs.callPackage ./package/v2-binary.nix { };
+        default = sayo-cli-v2;
+        sayo-cli-v1 = pkgs.callPackage ./package/sayo-cli/v1 { };
+        sayo-cli-v2 = pkgs.callPackage ./package/sayo-cli/v2 { };
         sayo-device-udev-rules = pkgs.callPackage ./package/sayo-device-udev-rules { };
       };
     };
