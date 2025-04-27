@@ -7,6 +7,7 @@ If you just want to use the website, you just need to add this udev rule.
 ```nix
 services.udev.extraRules = ''
     SUBSYSTEM=="hidraw", ATTRS{idVendor}=="8089", GROUP="input", MODE="0660"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="8089", GROUP="input", MODE="0660"
 '';
 
 users.users.${your-username}.extraGroups = [ "input" ];
