@@ -1,4 +1,5 @@
 {
+  lib,
   stdenv,
   fetchFromGitHub,
   pkg-config,
@@ -55,7 +56,8 @@ stdenv.mkDerivation {
   '';
 
   meta = {
-    homepage = "https://sayodevice.com/";
+    homepage = "https://github.com/Sayobot/Sayo_CLI";
     description = "Sayo Device CLI";
+    license = lib.licenses.mit;
   };
 }

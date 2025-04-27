@@ -1,4 +1,4 @@
-{ stdenv }:
+{ lib, stdenv }:
 
 stdenv.mkDerivation {
   pname = "sayo-udev-rules";
@@ -15,5 +15,6 @@ stdenv.mkDerivation {
   meta = {
     homepage = "https://github.com/Sayobot/Sayo_CLI";
     description = "udev rules that give NixOS permission to communicate with Sayo Device macro pads";
+    license = lib.licenses.mit;
   };
 }

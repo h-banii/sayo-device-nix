@@ -35,5 +35,6 @@ stdenv.mkDerivation {
   meta = {
     homepage = "https://sayodevice.com/";
     description = "Sayo Device CLI";
+    license = "unknown";
   };
 }
