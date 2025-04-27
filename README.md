@@ -1,6 +1,8 @@
 # sayo-device-nix
 
-## Manually
+## Udev rules to use the website
+
+### Manually
 
 If you just want to use the website, you just need to add this udev rule.
 
@@ -31,7 +33,7 @@ services.udev.extraRules = ''
 '';
 ```
 
-## This flake
+### Udev rules from this flake
 
 ```nix
 inputs.sayo-device.url = "github:h-banii/sayo-device-nix.git";
@@ -41,4 +43,13 @@ inputs.sayo-device.url = "github:h-banii/sayo-device-nix.git";
 services.udev.packages = [
     inputs.sayo-device.packages.sayo-udev-rules
 ];
+```
+
+## Sayo CLI
+
+```nix
+environment.systemPackages = with inputs.sayo-device.packages; [
+    sayo-cli-v1
+    sayo-cli-v2
+]
 ```
